@@ -48,9 +48,18 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
+  discount: function(userString) {
+    if (userString === "teacher") {
+      return this.price = this.price * 0.75;
+    }
+    if (userString === "student") {
+      return this.price = this.price * 0.75;
+    }
+    if (userString === "public") {
+      return this.price = this.price * 0.9;
+    }
+  }
 }
-
 
 
 ///////////////Reviews (MVP)///////////////////
@@ -70,6 +79,13 @@ Using the reviews array above:
   1. log only Julius' feedback to the console
 */
 
+let review;
+for (let i = 0; i < reviews.length; i++) {
+  review = reviews[i];
+  if (review.name === "Julius") {
+    console.log(review.feedback);
+  }
+}
 
 
 
