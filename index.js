@@ -18,6 +18,8 @@ function createMenuItem(objectName,objectPrice,objectCategory){
   return resultObject;
 }
 
+console.log(createMenuItem(latte.name, breakfastBurrito.prise, latte.category));
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Test your createMenuItems function by doing the following:
   1. Pass values to createMenuItems in order to create the objects (menu items)
@@ -50,13 +52,19 @@ export const burger = {
   category: "Lunch", 
   discount: function(userString) {
     if (userString === "teacher") {
-      return this.price = this.price * 0.75;
+      this.price = this.price * 0.75;
+      console.log("corected price:",this.price);
+      return this.price;
     }
     if (userString === "student") {
-      return this.price = this.price * 0.75;
+      this.price = this.price * 0.75;
+      console.log("corected price:",this.price);
+      return this.price;
     }
     if (userString === "public") {
-      return this.price = this.price * 0.9;
+      this.price = this.price * 0.9;
+      console.log("corected price:",this.price);
+      return this.price;
     }
   }
 }
