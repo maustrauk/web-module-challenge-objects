@@ -95,6 +95,9 @@ Using the reviews array above do the following:
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
+const newReview = {name:"Iaroslav", rating: 5,feedback:"Just awesome"};
+reviews.push(newReview);
+console.log(reviews);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
